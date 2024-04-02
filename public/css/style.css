@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary:#964B00;
-    --secondary: #8D9297;
-    --light: #F8F9FA;
+    --primary: #964b00;
+    --secondary: #8d9297;
+    --light: #f8f9fa;
     --dark: #182333;
 }
 
@@ -13,15 +13,12 @@
     bottom: 30px;
     z-index: 99;
 }
-.btn-primary{
-
-color: #964B00;
-
+.btn-primary {
+    color: #964b00;
 }
 
-
 /*logo*/
-.logo{
+.logo {
     position: fixed;
     height: auto;
     left: 0px;
@@ -32,26 +29,29 @@ color: #964B00;
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    transition:
+        opacity 0.5s ease-out,
+        visibility 0s linear 0.5s;
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    transition:
+        opacity 0.5s ease-out,
+        visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }
 
-
 /*** Button ***/
 .btn {
     font-weight: 500;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .btn.btn-primary,
 .btn.btn-outline-primary:hover {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .btn-square {
@@ -79,11 +79,10 @@ color: #964B00;
     font-weight: normal;
 }
 
-
 /*** Navbar ***/
 .navbar.sticky-top {
     top: -100px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -110,14 +109,14 @@ color: #964B00;
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-left: 0;
         padding: 10px 0;
     }
 
     .navbar .navbar-nav {
         margin-top: 25px;
-        border-top: 1px solid #EEEEEE;
+        border-top: 1px solid #eeeeee;
     }
 }
 
@@ -130,17 +129,16 @@ color: #964B00;
         right: 0;
         opacity: 0;
         visibility: hidden;
-        transition: .5s;
+        transition: 0.5s;
     }
 
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
         visibility: visible;
-        transition: .5s;
+        transition: 0.5s;
         opacity: 1;
     }
 }
-
 
 /*** Header ***/
 .carousel-caption {
@@ -151,7 +149,7 @@ color: #964B00;
     display: flex;
     align-items: center;
     text-align: start;
-    background: rgba(0, 0, 0, .65);
+    background: rgba(0, 0, 0, 0.65);
     z-index: 1;
 }
 
@@ -169,7 +167,7 @@ color: #964B00;
     border-radius: 50px;
 }
 
-.carousel-caption .breadcrumb-item+.breadcrumb-item::before {
+.carousel-caption .breadcrumb-item + .breadcrumb-item::before {
     content: "\f111";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -181,7 +179,7 @@ color: #964B00;
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -198,14 +196,15 @@ color: #964B00;
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/carousel-1.jpg) center center no-repeat;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
-.page-header .breadcrumb-item+.breadcrumb-item::before {
+.page-header .breadcrumb-item + .breadcrumb-item::before {
     color: #999999;
 }
-
 
 /*** Facts ***/
 .facts-overlay {
@@ -218,7 +217,7 @@ color: #964B00;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgba(0, 0, 0, .65);
+    background: rgba(0, 0, 0, 0.65);
 }
 
 .facts-overlay h1 {
@@ -231,7 +230,6 @@ color: #964B00;
     color: var(--primary) !important;
 }
 
-
 /*** Service ***/
 .service-text::before {
     position: absolute;
@@ -242,7 +240,7 @@ color: #964B00;
     left: 0;
     background: var(--primary);
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .service-item:hover .service-text::before {
@@ -252,21 +250,21 @@ color: #964B00;
 
 .service-text * {
     position: relative;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 1;
 }
 
 .service-item:hover .service-text * {
-    color: #FFFFFF !important;
+    color: #ffffff !important;
 }
-
 
 /*** Appointment ***/
 .appointment {
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/23.png) center center no-repeat;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../img/23.png) center center no-repeat;
     background-size: cover;
 }
-
 
 /*** Team ***/
 .team-text {
@@ -274,7 +272,7 @@ color: #964B00;
     width: 75%;
     bottom: 30px;
     left: 0;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .team-item:hover .team-text {
@@ -282,13 +280,12 @@ color: #964B00;
 }
 
 .team-text * {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .team-item:hover .team-text * {
     letter-spacing: 2px;
 }
-
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-item img {
@@ -314,15 +311,14 @@ color: #964B00;
     border: 2px solid var(--primary);
     border-radius: 50px;
     font-size: 18px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    color: #FFFFFF;
+    color: #ffffff;
     background: var(--primary);
 }
-
 
 /*** Footer ***/
 .footer {
@@ -337,7 +333,7 @@ color: #964B00;
     color: #999999;
     font-weight: normal;
     text-transform: capitalize;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .footer .btn.btn-link::before {
@@ -358,7 +354,7 @@ color: #964B00;
 .footer .copyright {
     padding: 25px 0;
     font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+    border-top: 1px solid rgba(256, 256, 256, 0.1);
 }
 
 .footer .copyright a {
